@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+$light_color: #eff1fa
+$color: #a3aae0
+
+*
+  padding: 0
+  margin: 0
+
+body
+  background: white
+  font-family: 'Roboto', sans-serif
+
+h1, h2, h3, h4, h5, h6
+  color: #333333
+  padding: 5px 15px
+
+a
+  text-decoration: none
+  &:visited
+    color: #3881c3
+
+input[type="button"]
+  outline: none
+
+small
+  padding-top: 13px
+
+header
+  .jumbotron
+    background: $light_color
+    padding-top: 5px
+    padding-bottom: 50px
+    border-bottom: 1px $color solid
+    margin-bottom: 0px
+    h4, h5
+      color: $color
+
+#section-form
+  .jumbotron
+    background: inherit
+    margin: 30px 30%
+
+    height: auto
+    margin-bottom: 30px
+    h2
+      margin-top: 0px
+      text-align: center
+    input
+      margin: 20px 20px
+      text-align: center
+
+main
+  input[type="search"]
+    margin-bottom: 50px
+  .contact
+    background: inherit
+    height: auto
+    margin: 10px 70px
+    border: 1px #ddddde solid
+
+.badge
+  background: #bed3fe
+
+input[type="text"]
+  width: 90%
+  margin: 30px
+//Icons
+.fa-facebook-square, .fa-github-square
+  font-size: 18px
+
+#center-p
+  text-align: center
+
+.hola
+  color: red
+  text-align: center

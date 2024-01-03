@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/animate.min.css">
+      <link rel="stylesheet" href="css/main.css">
+   </head>
+   <body>
+      <div id="app">
+         <header>
+            <div class="jumbotron">
+               <h4 class="col-xs-8 col-lg-11"><span class="fa fa-calendar-check-o"></span> Vue.Js Contact List</h4>
+               <h5 class="col-xs-4 col-lg-1">Made by <a href="https://github.com/germancutraro" target="_blank"> germancutraro</a></h5>
+            </div>
+         </header>
+         <section id="section-form">
+            <div class="jumbotron col-lg-5" :class="{hola: error }">
+               <h2>Add Contact</h2>
+               <hr/>
+               <input type="text" class="form-control" placeholder="Contact Name" v-model="contact_name" maxlength="10">
+               <input type="text"  class="form-control" placeholder="Contact Number" v-model="contact_number" maxlength="10">
+               <input type="text"  class="form-control"  placeholder="Short Contact Description" v-model="contact_description" maxlength="8">
+               <h5 v-show="error" :class="{hola: error }">An error has ocurred. Complete all the information</h5>
+               <p id="center-p"><input type="button" class="btn btn-primary" value="Submit" @click="addContact"></p>
+            </div>
+         </section>
+         <main>
+            <!-- Start Contact-->
+            <div class="contact col-lg-3" v-for="(contact, index) in contacts">
+               <h4><span class="fa fa-user-circle"></span> {{ contact.name }} <span class="badge">{{ index + 1 }}</span></h4>
+               <h4>
+               <span class="fa fa-phone-square"></span> {{ contact.number }}
+               <h4>
+               <hr/>
+               <small class="col-xs-7 col-medium-9 col-lg-9">{{ contact.description }}</small>
+               <input type="button" class="btn btn-danger col-xs-5 col-medium-3 col-lg-3" value="Delete" @click="deleteContact">
+               <br><br>
+            </div>
+            <!-- End Contact -->
+      </div>
+      </main>
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/vue.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>

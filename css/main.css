@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: white;
+  font-family: "Roboto", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+  padding: 5px 15px; }
+
+a {
+  text-decoration: none; }
+  a:visited {
+    color: #3881c3; }
+
+input[type="button"] {
+  outline: none; }
+
+small {
+  padding-top: 13px; }
+
+header .jumbotron {
+  background: #eff1fa;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  border-bottom: 1px #a3aae0 solid;
+  margin-bottom: 0px; }
+  header .jumbotron h4, header .jumbotron h5 {
+    color: #a3aae0; }
+
+#section-form .jumbotron {
+  background: inherit;
+  margin: 30px 30%;
+  height: auto;
+  margin-bottom: 30px; }
+  #section-form .jumbotron h2 {
+    margin-top: 0px;
+    text-align: center; }
+  #section-form .jumbotron input {
+    margin: 20px 20px;
+    text-align: center; }
+
+main input[type="search"] {
+  margin-bottom: 50px; }
+main .contact {
+  background: inherit;
+  height: auto;
+  margin: 10px 70px;
+  border: 1px #ddddde solid; }
+
+.badge {
+  background: #bed3fe; }
+
+input[type="text"] {
+  width: 90%;
+  margin: 30px; }
+
+.fa-facebook-square, .fa-github-square {
+  font-size: 18px; }
+
+#center-p {
+  text-align: center; }
+
+.hola {
+  color: red;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

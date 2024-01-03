@@ -1,0 +1,4 @@
+*.html linguist-language=JavaScript
+*.css linguist-language=JavaScript
+*.sass linguist-language=JavaScript
+*.Rmd linguist-language=JavaScript
